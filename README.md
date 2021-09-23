@@ -3,7 +3,7 @@
 Here is a template I use for giving talks.  The work flow follows:
 
 1) Generate an essay for the talk you'll give in essay.md (please write it in the exact manor in which you intend to read it).
-2) Generate slides as you're writing the essay.md, they're located in the /slides section
+2) Generate slides as you're writing the essay.md, they're located in the `slides/index.html`
 3) Profit .....just kidding =(
 
 
