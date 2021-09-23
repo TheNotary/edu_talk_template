@@ -2,35 +2,29 @@
 
 Here is a template I use for giving talks.  The work flow follows:
 
-1) Generate an essay for the talk you'll give in essay.md (please write it in the exact manor in which you intend to read it).  
+1) Generate an essay for the talk you'll give in essay.md (please write it in the exact manor in which you intend to read it).
 2) Generate slides as you're writing the essay.md, they're located in the /slides section
 3) Profit .....just kidding =(
 
 
 ## essay.md
 
-The top part of essay.md should be a bulleted outline of the talk.  Then there should be links to slides or other resources such as references.  The remainder of `essay.md` should be the actual talk written as it would be spoken during the lecture.  Once essay.md is written...  I currently use atom markdown viewer to render an HTML file out of the markdown content, then copy and paste some tweaks to the HTML.  I should make a rails app that automates this whole thing at some point....
+The top part of essay.md should be a bulleted outline of the talk.  Then there should be links to slides or other resources such as references.  The remainder of `essay.md` should be the actual talk written as it would be spoken during the lecture.  Once essay.md is written it's built into the index.html via the `build/make.sh` script.
 
-(_html_markup_additions.txt)
 ```
-<title>Gem Building</title>
-<style>
- body {font-family: 'Helvetica Neue' ;}
- .site-wrapper { width: 800px; margin-left:auto; margin-right: auto; }
-</style>
-      
-<div class="site-wrapper">
+cd build/
+./make.sh
 ```
 
 
 ## slides/
 
-The slides are built using reveal.js.  Hack your slides into the `slides/index.html` file.  
+The slides are built using reveal.js.  Hack your slides into the `slides/index.html` file.
 
 
-## brief.txt
+## brief.md
 
-The brief.txt gives a brief description of the talk.  This is handy for when you need to write summaries and stuff so that your talk can be printed onto pamphlets and things for conventions and workshop apps.  
+The brief.md gives a brief description of the talk.  This is handy for when you need to write summaries and stuff so that your talk can be printed onto pamphlets and things for conventions and workshop apps.
 
 
 ## Publish
@@ -40,11 +34,5 @@ Once everything is all together, you should be able to push this to your github 
 
 ## Screen Recording
 
-`recordmydesktop --on-the-fly-encoding --fps 1` might work for recording the screen and audio while minimizing the file size.  NB needs better recording equipemnt...  
-
-
-
-
-
-
+`recordmydesktop --on-the-fly-encoding --fps 1` might work for recording the screen and audio while minimizing the file size.  NB needs better recording equipemnt...
 
